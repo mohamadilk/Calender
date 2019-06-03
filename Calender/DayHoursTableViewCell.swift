@@ -11,6 +11,7 @@ import UIKit
 class DayHoursTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var day = Day(date: Date(), state: .DayState_NotSelected)
     
     private let itemPerRow:CGFloat = 6.0
     private let sectionInsets = UIEdgeInsets(top: 0,
@@ -20,16 +21,14 @@ class DayHoursTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.isScrollEnabled = false
 
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+    func configure(day: Day) {
+        self.day = day
     }
     
 }
@@ -39,26 +38,25 @@ extension DayHoursTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //2
+
         let availableWidth = collectionView.frame.width
         let widthPerItem = availableWidth / 6
         
         return CGSize(width: widthPerItem, height: widthPerItem * 0.6)
     }
-    //
-    //3
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
     
-    // 4
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.bottom
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
@@ -66,12 +64,12 @@ extension DayHoursTableViewCell: UICollectionViewDelegateFlowLayout {
 
 extension DayHoursTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 24
+        return day.hours.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HourCollectionCell", for: indexPath) as! HourCollectionViewCell
-        cell.timeLabel.text = indexPath.row  < 10 ? "0\(indexPath.row):00" : "\(indexPath.row):00"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HourCollectionCell", for: indexPath) as! HourCollectionViewCell        
+        cell.configure(hour: day.hours[indexPath.row])
         return cell
     }
 }

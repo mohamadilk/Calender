@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     var tableViewDatasource = TableViewDatasource()
     var collectionViewDatasource = CollectionViewDatasource()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         

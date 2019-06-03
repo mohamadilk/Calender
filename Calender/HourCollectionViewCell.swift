@@ -11,5 +11,15 @@ import UIKit
 class HourCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var availabalityImage: UIImageView!
+    
+    func configure(hour: Hour) {
+        timeLabel.text = hour.hour
+        
+        if !hour.selectable {
+            timeLabel.alpha = 0.5
+            availabalityImage.isHidden = false
+        }
+    }
     
 }

@@ -48,7 +48,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="EIR-Q6-9ms">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeekDayCollectionViewCell" id="EIR-Q6-9ms" customClass="WeekDayCollectionViewCell" customModule="Calender" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -75,6 +75,10 @@
                                             <constraint firstItem="LMg-H1-DBI" firstAttribute="top" secondItem="yFC-hq-cWT" secondAttribute="bottom" constant="5" id="Ejw-8B-nEw"/>
                                             <constraint firstItem="yFC-hq-cWT" firstAttribute="centerX" secondItem="EIR-Q6-9ms" secondAttribute="centerX" id="hd5-cC-amx"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dayNameLabel" destination="yFC-hq-cWT" id="3AW-bj-ico"/>
+                                            <outlet property="dayNumberLabel" destination="LMg-H1-DBI" id="crN-uu-Hc3"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -112,13 +116,19 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unavailable" translatesAutoresizingMaskIntoConstraints="NO" id="zxO-BE-ku4">
+                                                                        <rect key="frame" x="-5" y="-5" width="60" height="60"/>
+                                                                    </imageView>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
+                                                                <constraint firstItem="zxO-BE-ku4" firstAttribute="centerY" secondItem="e9Y-ZB-qZ9" secondAttribute="centerY" id="KZb-r7-Isx"/>
+                                                                <constraint firstItem="zxO-BE-ku4" firstAttribute="centerX" secondItem="e9Y-ZB-qZ9" secondAttribute="centerX" id="fX5-bs-sr4"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="centerY" secondItem="skx-dQ-Zpk" secondAttribute="centerY" id="waj-LF-7ve"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="centerX" secondItem="skx-dQ-Zpk" secondAttribute="centerX" id="x0s-6O-6up"/>
                                                             </constraints>
                                                             <connections>
+                                                                <outlet property="availabalityImage" destination="zxO-BE-ku4" id="a6E-9K-AAY"/>
                                                                 <outlet property="timeLabel" destination="e9Y-ZB-qZ9" id="WzZ-So-WZ7"/>
                                                             </connections>
                                                         </collectionViewCell>
@@ -262,4 +272,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="unavailable" width="60" height="60"/>
+    </resources>
 </document>
