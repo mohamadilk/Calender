@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ButtomView: UIView {
+protocol ButtomViewDelegate {
+    func didConfirmDates()
+}
 
+class ButtomView: UIView {
+    
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var startHour: UILabel!
     @IBOutlet weak var endHour: UILabel!
@@ -18,20 +22,23 @@ class ButtomView: UIView {
     @IBOutlet weak var totalPrice: UILabel!
     @IBOutlet weak var setDateButton: UIButton!
     
+    var delegate: ButtomViewDelegate?
+    
     override func layoutSubviews() {
+        clipsToBounds = true
         setDateButton.clipsToBounds = true
         setDateButton.layer.cornerRadius = 4
     }
-
+    
     func updateView(selectedHours: (firstHour: Hour?, secondHour: Hour?), totalTime: Int?) {
         var constant: CGFloat = 0
         if (selectedHours.firstHour == nil) && (selectedHours.secondHour == nil) {
             constant = 0
-            totalDuration.text = ""
+            startHour.text = ""
         } else if (selectedHours.firstHour != nil) && (selectedHours.secondHour == nil) {
             startHour.text = selectedHours.firstHour!.hour
             endHour.text = "Choose end hour"
-            constant = 50
+            constant = 60
         } else if (selectedHours.firstHour != nil) && (selectedHours.secondHour != nil) {
             endHour.text = selectedHours.secondHour?.hour
             totalDuration.text = "/\(totalTime!) hour"
@@ -45,6 +52,7 @@ class ButtomView: UIView {
         animator.startAnimation()
     }
     
-     @IBAction func setDate(_ sender: UIButton) {
-     }
+    @IBAction func setDate(_ sender: UIButton) {
+        delegate?.didConfirmDates()
+    }
 }

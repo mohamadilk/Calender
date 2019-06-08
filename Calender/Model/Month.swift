@@ -14,7 +14,7 @@ class Month {
     let years: [Int]
     var selectedHours: (firstHour: Hour?, secondHour: Hour?) = (firstHour: nil, secondHour: nil)
     var includedTimes: Array<Time> = Array()
-
+    
     init() {
         self.days = Month.oneMonthDates()
         self.years = Month.years(days: self.days)
@@ -22,7 +22,7 @@ class Month {
     
     func updateSelectedTimes(hourIndex: Int, dayIndex: Int) {
         let newTime = Time(dayIndex: dayIndex, hourIndex: hourIndex)
-
+        
         if selectedHours.firstHour == nil { // No hour has been selected
             selectedHours.firstHour = days[newTime.dayIndex].hours[newTime.hourIndex]
             includedTimes.append(Time(dayIndex: newTime.dayIndex, hourIndex: newTime.hourIndex))

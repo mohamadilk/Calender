@@ -10,7 +10,7 @@
 		CB08EF4D22ABB5750094224A /* WeekDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */; };
 		CB9DABDB22ABBB3D00E19D63 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */; };
 		CBD15DAF22A3DDA200FB75C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */; };
-		CBD15DB122A3DDA200FB75C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DB022A3DDA200FB75C8 /* ViewController.swift */; };
+		CBD15DB122A3DDA200FB75C8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DB022A3DDA200FB75C8 /* CalendarViewController.swift */; };
 		CBD15DB422A3DDA200FB75C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB222A3DDA200FB75C8 /* Main.storyboard */; };
 		CBD15DB622A3DDA300FB75C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */; };
 		CBD15DB922A3DDA300FB75C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */; };
@@ -48,7 +48,7 @@
 		CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CBD15DAB22A3DDA200FB75C8 /* Calender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBD15DB022A3DDA200FB75C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBD15DB022A3DDA200FB75C8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		CBD15DB322A3DDA200FB75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD15DB822A3DDA300FB75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,10 +94,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB9DABDC22ABF5D900E19D63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */,
+				CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */,
+				CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */,
+				CBD15DBA22A3DDA300FB75C8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9DABDD22ABF5FA00E19D63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D187AEB022AAB86C00B26B1C /* ButtomView.swift */,
+				CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */,
+				CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */,
+				CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */,
+				CBD15DB222A3DDA200FB75C8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB9DABDE22ABF62D00E19D63 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1CAE09022A7A4130082C39E /* CustomeColors.swift */,
+				CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB9DABDF22ABF65700E19D63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBD15DEE22A531B600FB75C8 /* Month.swift */,
+				CBD15DEC22A5275E00FB75C8 /* Day.swift */,
+				CBD15DF022A5373C00FB75C8 /* Hour.swift */,
+				D16D408222AA5BEF00142364 /* Time.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CBD15DA222A3DDA200FB75C8 = {
 			isa = PBXGroup;
 			children = (
 				CBD15DAD22A3DDA200FB75C8 /* Calender */,
+				CBD15DB022A3DDA200FB75C8 /* CalendarViewController.swift */,
 				CBD15DC222A3DDA300FB75C8 /* CalenderTests */,
 				CBD15DCD22A3DDA300FB75C8 /* CalenderUITests */,
 				CBD15DAC22A3DDA200FB75C8 /* Products */,
@@ -117,22 +161,10 @@
 		CBD15DAD22A3DDA200FB75C8 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
-				CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */,
-				CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */,
-				CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */,
-				CBD15DB222A3DDA200FB75C8 /* Main.storyboard */,
-				CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */,
-				CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */,
-				CBD15DBA22A3DDA300FB75C8 /* Info.plist */,
-				CBD15DB022A3DDA200FB75C8 /* ViewController.swift */,
-				CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */,
-				CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */,
-				CBD15DEE22A531B600FB75C8 /* Month.swift */,
-				CBD15DEC22A5275E00FB75C8 /* Day.swift */,
-				CBD15DF022A5373C00FB75C8 /* Hour.swift */,
-				D1CAE09022A7A4130082C39E /* CustomeColors.swift */,
-				D16D408222AA5BEF00142364 /* Time.swift */,
-				D187AEB022AAB86C00B26B1C /* ButtomView.swift */,
+				CB9DABDE22ABF62D00E19D63 /* Utils */,
+				CB9DABDD22ABF5FA00E19D63 /* View */,
+				CB9DABDC22ABF5D900E19D63 /* Supporting Files */,
+				CB9DABDF22ABF65700E19D63 /* Model */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -286,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD15DB122A3DDA200FB75C8 /* ViewController.swift in Sources */,
+				CBD15DB122A3DDA200FB75C8 /* CalendarViewController.swift in Sources */,
 				D187AEB122AAB86C00B26B1C /* ButtomView.swift in Sources */,
 				CBD15DE322A3FEA300FB75C8 /* DayHoursTableViewCell.swift in Sources */,
 				D16D408322AA5BEF00142364 /* Time.swift in Sources */,
@@ -474,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2CSQF9CPL;
-				INFOPLIST_FILE = Calender/Info.plist;
+				INFOPLIST_FILE = "Calender/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2CSQF9CPL;
-				INFOPLIST_FILE = Calender/Info.plist;
+				INFOPLIST_FILE = "Calender/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

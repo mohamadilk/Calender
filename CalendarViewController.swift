@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalendarViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,13 +19,14 @@ class ViewController: UIViewController {
     
     
     var currentSelectedMonth = ""
+    var selectedAnHour = false
     let month = Month()
-
+    
     private let sectionInsets = UIEdgeInsets(top: 0,
                                              left: 0,
                                              bottom: 0,
                                              right: 0)
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -59,12 +60,13 @@ class ViewController: UIViewController {
         
         monthName.attributedText = finalStr
         buttomVIew.heightConstraint.constant = 0
+        buttomVIew.delegate = self
     }
     
 }
 
 // TableView Delegate and Datasource
-extension ViewController: UITableViewDelegate {
+extension CalendarViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1
@@ -91,7 +93,7 @@ extension ViewController: UITableViewDelegate {
             let buttomBorder = UIView(frame: CGRect(x: 0, y: 59, width: tableView.frame.size.width, height: 1))
             topBorder.backgroundColor = UIColor.UltralightGray()
             buttomBorder.backgroundColor = UIColor.UltralightGray()
-
+            
             let chooseDateLabel = UILabel(frame: CGRect(x: 10, y: 13, width: tableView.frame.size.width, height: 15))
             chooseDateLabel.text = "Choose a start and end hour"
             chooseDateLabel.textColor = .lightGray
@@ -101,7 +103,7 @@ extension ViewController: UITableViewDelegate {
             let dayDetailLabel = UILabel(frame: CGRect(x: 10, y: 25, width: tableView.frame.size.width, height: 35))
             dayDetailLabel.text = month.days[section].dayTitle
             dayDetailLabel.font = UIFont.boldSystemFont(ofSize: 17)
-
+            
             view.addSubview(chooseDateLabel)
             view.addSubview(dayDetailLabel)
             view.addSubview(topBorder)
@@ -122,7 +124,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension CalendarViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return month.days.count
@@ -141,15 +143,14 @@ extension ViewController: UITableViewDataSource {
 }
 
 // CollectionView Delegate and Datasource
-extension ViewController: UICollectionViewDelegate {
-
+extension CalendarViewController: UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         tableView.scrollToRow(at: IndexPath(row: 0, section: indexPath.row), at: .top, animated: true)
     }
-    
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension CalendarViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -178,7 +179,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension CalendarViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return month.days.count
     }
@@ -186,12 +187,15 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeekDayCollectionViewCell", for: indexPath) as! WeekDayCollectionViewCell
         cell.configureCell(day: month.days[indexPath.row])
+        if indexPath.row == 0 && !selectedAnHour {
+            cell.setAsJustOneSelected()
+        }
         return cell
     }
 }
 
 // ScrollView Delegate
-extension ViewController: UIScrollViewDelegate {
+extension CalendarViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let _ = scrollView as? UICollectionView {
             let visibleIndexes = collectionView.indexPathsForVisibleItems
@@ -215,7 +219,7 @@ extension ViewController: UIScrollViewDelegate {
                     
                     self.monthName.fadeTransition(0.2)
                     self.monthName.attributedText = finalStr
-
+                    
                 }
             }
         }
@@ -223,8 +227,12 @@ extension ViewController: UIScrollViewDelegate {
 }
 
 // Additional Delegates
-extension ViewController: DayHoursTableViewCellDelegate {
+extension CalendarViewController: DayHoursTableViewCellDelegate {
     func didSelect(hour: Int, day: Day, index: Int) {
+        selectedAnHour = true
+        if let cell = collectionView.cellForItem(at: IndexPath(row: 0, section: 0)) as? WeekDayCollectionViewCell {
+            cell.setAsNotSelected()
+        }
         month.updateSelectedTimes(hourIndex: hour, dayIndex: index)
         updateVisibleCells()
         buttomVIew.updateView(selectedHours: month.selectedHours, totalTime: month.includedTimes.count)
@@ -240,6 +248,12 @@ extension ViewController: DayHoursTableViewCellDelegate {
             cell?.configure(day: month.days[tableCells[index].section], index: tableCells[index].section)
         }
     }
-    
-    
+}
+
+extension CalendarViewController: ButtomViewDelegate {
+    func didConfirmDates() {
+        let alert = UIAlertController(title: "Success!", message: "Did Select Hours:\n\(month.selectedHours.firstHour!.hour) to \(month.selectedHours.secondHour!.hour) ", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

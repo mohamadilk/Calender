@@ -26,9 +26,9 @@ struct Day {
     var hours = [Hour]()
     let dayTitle: String
     let monthName: String
- 
+    
     static let dateFormatter = DateFormatter()
-
+    
     init(date: Date, state: DayState) {
         
         self.date = date

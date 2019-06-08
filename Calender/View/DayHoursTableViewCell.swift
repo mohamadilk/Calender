@@ -30,7 +30,7 @@ class DayHoursTableViewCell: UITableViewCell {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.isScrollEnabled = false
-
+        
     }
     
     func configure(day: Day, index: Int) {
@@ -48,13 +48,13 @@ extension DayHoursTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let availableWidth = collectionView.frame.width
         let widthPerItem = availableWidth / 6
         
         return CGSize(width: widthPerItem, height: widthPerItem * 0.6)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalendarViewController" customModule="Calender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                             <constraint firstAttribute="height" constant="1" id="G75-K3-LDH"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="QYT-6v-9n8">
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="QYT-6v-9n8">
                                         <rect key="frame" x="351" y="12" width="16" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="5aW-nX-juP"/>
@@ -250,17 +250,17 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="setDate:" destination="Sue-ej-sz0" eventType="touchUpInside" id="5Ra-4F-DVJ"/>
+                                            <action selector="setDate:" destination="FM6-5D-wsW" eventType="touchUpInside" id="slE-91-bVz"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Jc5-1X-RQO">
-                                        <rect key="frame" x="167.5" y="15" width="40" height="25"/>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Jc5-1X-RQO">
+                                        <rect key="frame" x="172.5" y="15" width="30" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Vfi-5i-tm5"/>
-                                            <constraint firstAttribute="height" constant="25" id="YYX-TQ-YNT"/>
+                                            <constraint firstAttribute="width" constant="30" id="Vfi-5i-tm5"/>
+                                            <constraint firstAttribute="height" constant="20" id="YYX-TQ-YNT"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbq-pU-xgC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbq-pU-xgC" userLabel="Separator">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                                         <color key="backgroundColor" white="0.91610001929999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -328,7 +328,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="Sue-ej-sz0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="-564.46776611694156"/>
         </scene>
@@ -352,7 +351,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow" width="625" height="481"/>
+        <image name="arrow" width="60" height="47"/>
         <image name="littleArrow" width="6.4537816047668457" height="6.4537816047668457"/>
         <image name="unavailable" width="60" height="60"/>
     </resources>
