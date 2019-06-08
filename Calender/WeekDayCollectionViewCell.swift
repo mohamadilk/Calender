@@ -12,6 +12,10 @@ class WeekDayCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var dayNameLabel: UILabel!
     @IBOutlet weak var dayNumberLabel: UILabel!
+    @IBOutlet weak var backgroundColorView: UIView!
+    
+    @IBOutlet weak var backgroundViewTrainling: NSLayoutConstraint!
+    @IBOutlet weak var backgroundViewLeading: NSLayoutConstraint!
     
     var day: Day = Day(date: Date(), state: .DayState_NotSelected) {
         didSet {
