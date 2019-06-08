@@ -33,28 +33,36 @@ class WeekDayCollectionViewCell: UICollectionViewCell {
         
         switch day.state {
         case .DayState_NotSelected:
-            dayNumberLabel.layer.cornerRadius = 0
-            dayNumberLabel.backgroundColor = .clear
+            backgroundColorView.layer.cornerRadius = 0
+            backgroundColorView.isHidden = true
             break
             
         case .DayState_SelectedJustOne:
-            dayNumberLabel.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: dayNumberLabel.frame.size.height / 2)
-            dayNumberLabel.backgroundColor = .blue
+            backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrainling.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2
+            backgroundColorView.isHidden = false
             break
             
         case .DayState_SelectedAsStart:
-            dayNumberLabel.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: dayNumberLabel.frame.size.height / 2)
-            dayNumberLabel.backgroundColor = .blue
+            backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrainling.constant = 0
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2
+            backgroundColorView.isHidden = false
             break
             
         case .DayState_SelectedInRange:
-            dayNumberLabel.layer.cornerRadius = 0
-            dayNumberLabel.backgroundColor = .blue
+            backgroundColorView.layer.cornerRadius = 0
+            backgroundViewTrainling.constant = 0
+            backgroundViewLeading.constant = 0
+            backgroundColorView.isHidden = false
             break
             
         case .DayState_SelectedAsEnd:
-            dayNumberLabel.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: dayNumberLabel.frame.size.height / 2)
-            dayNumberLabel.backgroundColor = .blue
+            backgroundColorView.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrainling.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 2
+            backgroundViewLeading.constant = 0
+            backgroundColorView.isHidden = false
             break
         }
     }

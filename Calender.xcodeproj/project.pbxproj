@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB05991C22AB9B9600244128 /* uiViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05991B22AB9B9600244128 /* uiViewExtensions.swift */; };
 		CB08EF4D22ABB5750094224A /* WeekDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */; };
+		CB9DABDB22ABBB3D00E19D63 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */; };
 		CBD15DAF22A3DDA200FB75C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */; };
 		CBD15DB122A3DDA200FB75C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DB022A3DDA200FB75C8 /* ViewController.swift */; };
 		CBD15DB422A3DDA200FB75C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB222A3DDA200FB75C8 /* Main.storyboard */; };
@@ -44,8 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB05991B22AB9B9600244128 /* uiViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiViewExtensions.swift; sourceTree = "<group>"; };
 		CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CBD15DAB22A3DDA200FB75C8 /* Calender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD15DB022A3DDA200FB75C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 		CBD15DAD22A3DDA200FB75C8 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
+				CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */,
 				CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */,
 				CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */,
 				CBD15DB222A3DDA200FB75C8 /* Main.storyboard */,
@@ -132,7 +133,6 @@
 				D1CAE09022A7A4130082C39E /* CustomeColors.swift */,
 				D16D408222AA5BEF00142364 /* Time.swift */,
 				D187AEB022AAB86C00B26B1C /* ButtomView.swift */,
-				CB05991B22AB9B9600244128 /* uiViewExtensions.swift */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 				CB08EF4D22ABB5750094224A /* WeekDayCollectionViewCell.swift in Sources */,
 				CBD15DED22A5275E00FB75C8 /* Day.swift in Sources */,
 				CBD15DEF22A531B600FB75C8 /* Month.swift in Sources */,
-				CB05991C22AB9B9600244128 /* uiViewExtensions.swift in Sources */,
+				CB9DABDB22ABBB3D00E19D63 /* UIViewExtensions.swift in Sources */,
 				CBD15DF122A5373C00FB75C8 /* Hour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
