@@ -12,6 +12,10 @@ class HourCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var availabalityImage: UIImageView!
+    @IBOutlet weak var backgroundColorView: UIView!
+    
+    @IBOutlet weak var backgroundViewLeading: NSLayoutConstraint!
+    @IBOutlet weak var backgroundViewTrailing: NSLayoutConstraint!
     
     var hour: Hour?
     
@@ -33,35 +37,42 @@ class HourCollectionViewCell: UICollectionViewCell {
         
         if !hour!.selectable {
             timeLabel.layer.cornerRadius = 0
-            timeLabel.backgroundColor = .clear
+            backgroundColorView.isHidden = true
             return
         }
         
         switch hour!.state {
         case .HourState_NotSelected:
-            timeLabel.layer.cornerRadius = 0
-            timeLabel.backgroundColor = .clear
-            break
-
-        case .HourState_SelectedJustOne:
-            timeLabel.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: timeLabel.frame.size.height / 2)
-            timeLabel.backgroundColor = .red
+            backgroundColorView.layer.cornerRadius = 0
+            backgroundColorView.isHidden = true
             break
             
+        case .HourState_SelectedJustOne:
+            backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundColorView.isHidden = false
+            break
             
         case .HourState_SelectedAsStart:
-            timeLabel.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: timeLabel.frame.size.height / 2)
-            timeLabel.backgroundColor = .red
+            backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrailing.constant = 0
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundColorView.isHidden = false
             break
             
         case .HourState_SelectedInRange:
-            timeLabel.layer.cornerRadius = 0
-            timeLabel.backgroundColor = .red
+            backgroundColorView.layer.cornerRadius = 0
+            backgroundViewTrailing.constant = 0
+            backgroundViewLeading.constant = 0
+            backgroundColorView.isHidden = false
             break
             
         case .HourState_SelectedAsEnd:
-            timeLabel.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: timeLabel.frame.size.height / 2)
-            timeLabel.backgroundColor = .red
+            backgroundColorView.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
+            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundViewLeading.constant = 0
+            backgroundColorView.isHidden = false
             break
         }
     }
