@@ -228,7 +228,6 @@ extension ViewController: DayHoursTableViewCellDelegate {
         month.updateSelectedTimes(hourIndex: hour, dayIndex: index)
         updateVisibleCells()
         buttomVIew.updateView(selectedHours: month.selectedHours, totalTime: month.includedTimes.count)
-
     }
     
     func updateVisibleCells() {

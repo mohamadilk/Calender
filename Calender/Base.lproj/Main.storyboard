@@ -34,12 +34,21 @@
                                             <constraint firstAttribute="height" constant="1" id="G75-K3-LDH"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="QYT-6v-9n8">
+                                        <rect key="frame" x="351" y="12" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="5aW-nX-juP"/>
+                                            <constraint firstAttribute="height" constant="16" id="e8f-Kd-Ea8"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QYT-6v-9n8" secondAttribute="trailing" constant="8" id="1iZ-XX-fhu"/>
                                     <constraint firstAttribute="bottom" secondItem="I8V-vT-YhH" secondAttribute="bottom" constant="3" id="9tu-iW-52E"/>
                                     <constraint firstAttribute="trailing" secondItem="I8V-vT-YhH" secondAttribute="trailing" id="IGO-hh-Q6u"/>
                                     <constraint firstItem="JHi-Ev-dnc" firstAttribute="centerX" secondItem="B21-Sq-2JR" secondAttribute="centerX" id="Tc3-Ib-vBv"/>
+                                    <constraint firstItem="QYT-6v-9n8" firstAttribute="centerY" secondItem="B21-Sq-2JR" secondAttribute="centerY" id="Vtb-5h-WU2"/>
                                     <constraint firstItem="I8V-vT-YhH" firstAttribute="leading" secondItem="B21-Sq-2JR" secondAttribute="leading" id="as3-eK-q5J"/>
                                     <constraint firstAttribute="height" constant="40" id="oPO-W1-J2l"/>
                                     <constraint firstItem="JHi-Ev-dnc" firstAttribute="centerY" secondItem="B21-Sq-2JR" secondAttribute="centerY" id="zgi-WS-nkA"/>
@@ -74,7 +83,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="su" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFC-hq-cWT">
-                                                    <rect key="frame" x="17.5" y="5" width="15.5" height="17"/>
+                                                    <rect key="frame" x="17" y="5" width="16" height="17"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -344,6 +353,7 @@
     </scenes>
     <resources>
         <image name="arrow" width="625" height="481"/>
+        <image name="littleArrow" width="6.4537816047668457" height="6.4537816047668457"/>
         <image name="unavailable" width="60" height="60"/>
     </resources>
 </document>

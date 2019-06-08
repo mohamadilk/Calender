@@ -27,6 +27,7 @@ class ButtomView: UIView {
         var constant: CGFloat = 0
         if (selectedHours.firstHour == nil) && (selectedHours.secondHour == nil) {
             constant = 0
+            totalDuration.text = ""
         } else if (selectedHours.firstHour != nil) && (selectedHours.secondHour == nil) {
             startHour.text = selectedHours.firstHour!.hour
             endHour.text = "Choose end hour"
@@ -37,10 +38,11 @@ class ButtomView: UIView {
             totalPrice.text = "\(totalTime! * 300)$"
             constant = 100
         }
-        UIView.animate(withDuration: 0.2) {
-            self.heightConstraint.constant = constant
+        self.heightConstraint.constant = constant
+        let animator = UIViewPropertyAnimator(duration: 0.2, curve: .linear, animations: {
             self.layoutIfNeeded()
-        }
+        })
+        animator.startAnimation()
     }
     
      @IBAction func setDate(_ sender: UIButton) {
