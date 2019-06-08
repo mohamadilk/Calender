@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = .white
+        tableView.separatorColor = .clear
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.000000001
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -227,9 +228,7 @@ extension ViewController: DayHoursTableViewCellDelegate {
         month.updateSelectedTimes(hourIndex: hour, dayIndex: index)
         updateVisibleCells()
         buttomVIew.updateView(selectedHours: month.selectedHours, totalTime: month.includedTimes.count)
-        UIView.animate(withDuration: 0.2) {
-            self.buttomVIew.layoutIfNeeded()
-        }
+
     }
     
     func updateVisibleCells() {

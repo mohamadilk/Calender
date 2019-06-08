@@ -36,6 +36,7 @@ class DayHoursTableViewCell: UITableViewCell {
     func configure(day: Day, index: Int) {
         self.day = day
         self.index = index
+        selectionStyle = UITableViewCell.SelectionStyle.none
         collectionView.reloadData()
     }
     

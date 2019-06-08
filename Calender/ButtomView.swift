@@ -37,7 +37,10 @@ class ButtomView: UIView {
             totalPrice.text = "\(totalTime! * 300)$"
             constant = 100
         }
-        heightConstraint.constant = constant
+        UIView.animate(withDuration: 0.2) {
+            self.heightConstraint.constant = constant
+            self.layoutIfNeeded()
+        }
     }
     
      @IBAction func setDate(_ sender: UIButton) {
