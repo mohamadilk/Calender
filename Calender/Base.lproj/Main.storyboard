@@ -135,6 +135,13 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nc-ue-L1b">
+                                                                        <rect key="frame" x="0.0" y="10" width="50" height="30"/>
+                                                                        <color key="backgroundColor" red="1" green="0.25842786815068491" blue="0.38792273116438358" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="3Eb-O4-jxe"/>
+                                                                        </constraints>
+                                                                    </view>
                                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9Y-ZB-qZ9">
                                                                         <rect key="frame" x="0.0" y="10" width="50" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -147,17 +154,23 @@
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
+                                                                <constraint firstItem="9nc-ue-L1b" firstAttribute="centerY" secondItem="skx-dQ-Zpk" secondAttribute="centerY" id="006-pb-NeD"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="top" secondItem="skx-dQ-Zpk" secondAttribute="top" constant="10" id="40A-6A-M5A"/>
+                                                                <constraint firstAttribute="trailing" secondItem="9nc-ue-L1b" secondAttribute="trailing" id="AtE-UK-QOK"/>
                                                                 <constraint firstItem="zxO-BE-ku4" firstAttribute="centerY" secondItem="e9Y-ZB-qZ9" secondAttribute="centerY" id="KZb-r7-Isx"/>
                                                                 <constraint firstAttribute="bottom" secondItem="e9Y-ZB-qZ9" secondAttribute="bottom" constant="10" id="dfU-6d-2p4"/>
                                                                 <constraint firstItem="zxO-BE-ku4" firstAttribute="centerX" secondItem="e9Y-ZB-qZ9" secondAttribute="centerX" id="fX5-bs-sr4"/>
                                                                 <constraint firstAttribute="trailing" secondItem="e9Y-ZB-qZ9" secondAttribute="trailing" id="jqa-B6-pdT"/>
+                                                                <constraint firstItem="9nc-ue-L1b" firstAttribute="leading" secondItem="skx-dQ-Zpk" secondAttribute="leading" id="pGL-ca-Y7i"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="leading" secondItem="skx-dQ-Zpk" secondAttribute="leading" id="uFO-6H-EQb"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="centerY" secondItem="skx-dQ-Zpk" secondAttribute="centerY" id="waj-LF-7ve"/>
                                                                 <constraint firstItem="e9Y-ZB-qZ9" firstAttribute="centerX" secondItem="skx-dQ-Zpk" secondAttribute="centerX" id="x0s-6O-6up"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="availabalityImage" destination="zxO-BE-ku4" id="a6E-9K-AAY"/>
+                                                                <outlet property="backgroundColorView" destination="9nc-ue-L1b" id="Z43-Yk-qkW"/>
+                                                                <outlet property="backgroundViewLeading" destination="pGL-ca-Y7i" id="f51-WU-Fh6"/>
+                                                                <outlet property="backgroundViewTrailing" destination="AtE-UK-QOK" id="DjL-Hd-17c"/>
                                                                 <outlet property="timeLabel" destination="e9Y-ZB-qZ9" id="WzZ-So-WZ7"/>
                                                             </connections>
                                                         </collectionViewCell>
