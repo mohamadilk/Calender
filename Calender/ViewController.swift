@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var monthName: UILabel!
+    @IBOutlet weak var collectionViewWidth: NSLayoutConstraint!
     
     @IBOutlet weak var buttomVIew: ButtomView!
     
@@ -33,7 +34,12 @@ class ViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        let truncatingReminder = (self.view.frame.width) .truncatingRemainder(dividingBy: 7)
+        if (truncatingReminder != 0){
+            collectionViewWidth.constant = self.view.frame.width - truncatingReminder
+        }else{
+            collectionViewWidth.constant = self.view.frame.width
+        }
         initialViews()
     }
     

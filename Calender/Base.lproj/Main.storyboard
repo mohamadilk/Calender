@@ -49,6 +49,7 @@
                                 <rect key="frame" x="0.0" y="104" width="375" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6gM-E7-l3v"/>
                                     <constraint firstAttribute="height" constant="55" id="KcH-DQ-O8B"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FgP-mh-cUd">
@@ -66,7 +67,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufe-IB-um9">
-                                                    <rect key="frame" x="0.0" y="26" width="50" height="22"/>
+                                                    <rect key="frame" x="0.0" y="25" width="50" height="22"/>
                                                     <color key="backgroundColor" red="0.2636451198630137" green="0.32467358732876711" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="cA2-R0-7Oq"/>
@@ -89,12 +90,12 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="yFC-hq-cWT" firstAttribute="top" secondItem="EIR-Q6-9ms" secondAttribute="top" constant="5" id="EMi-h4-1cJ"/>
-                                            <constraint firstItem="Ufe-IB-um9" firstAttribute="top" secondItem="EIR-Q6-9ms" secondAttribute="top" constant="26" id="IvM-dr-zx0"/>
                                             <constraint firstItem="LMg-H1-DBI" firstAttribute="top" secondItem="EIR-Q6-9ms" secondAttribute="top" constant="22" id="UrB-dm-v91"/>
                                             <constraint firstItem="LMg-H1-DBI" firstAttribute="centerX" secondItem="EIR-Q6-9ms" secondAttribute="centerX" id="Uwj-ys-RaC"/>
                                             <constraint firstAttribute="trailing" secondItem="Ufe-IB-um9" secondAttribute="trailing" id="WAa-4C-ZST"/>
                                             <constraint firstItem="Ufe-IB-um9" firstAttribute="leading" secondItem="EIR-Q6-9ms" secondAttribute="leading" id="aUa-9D-mqR"/>
                                             <constraint firstItem="yFC-hq-cWT" firstAttribute="centerX" secondItem="EIR-Q6-9ms" secondAttribute="centerX" id="hd5-cC-amx"/>
+                                            <constraint firstItem="Ufe-IB-um9" firstAttribute="centerY" secondItem="LMg-H1-DBI" secondAttribute="centerY" id="nvJ-GQ-imv"/>
                                             <constraint firstAttribute="bottom" secondItem="LMg-H1-DBI" secondAttribute="bottom" id="xf5-uB-Pdv"/>
                                         </constraints>
                                         <connections>
@@ -293,16 +294,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xiO-Wb-9DV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4fh-FR-3bU"/>
                             <constraint firstItem="FM6-5D-wsW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Cy-lA-xeC"/>
                             <constraint firstItem="FM6-5D-wsW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6HM-t7-09M"/>
                             <constraint firstItem="B21-Sq-2JR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cqq-Br-nmY"/>
                             <constraint firstItem="888-Nj-BVZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LBk-y0-Znj"/>
                             <constraint firstItem="xiO-Wb-9DV" firstAttribute="top" secondItem="B21-Sq-2JR" secondAttribute="bottom" id="NIr-tW-mIP"/>
-                            <constraint firstItem="xiO-Wb-9DV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aT0-8A-zSa"/>
                             <constraint firstItem="B21-Sq-2JR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lJI-JK-lhv"/>
                             <constraint firstItem="888-Nj-BVZ" firstAttribute="top" secondItem="xiO-Wb-9DV" secondAttribute="bottom" id="nex-yo-DcT"/>
                             <constraint firstItem="FM6-5D-wsW" firstAttribute="top" secondItem="888-Nj-BVZ" secondAttribute="bottom" id="tBD-M4-Md8"/>
-                            <constraint firstItem="xiO-Wb-9DV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tHN-Mm-uME"/>
                             <constraint firstItem="888-Nj-BVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w3e-Fg-d4t"/>
                             <constraint firstItem="FM6-5D-wsW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yVq-dV-00y"/>
                             <constraint firstItem="B21-Sq-2JR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ytE-2F-c8u"/>
@@ -313,6 +313,7 @@
                     <connections>
                         <outlet property="buttomVIew" destination="FM6-5D-wsW" id="kfA-cj-o3V"/>
                         <outlet property="collectionView" destination="xiO-Wb-9DV" id="uCW-2z-4aF"/>
+                        <outlet property="collectionViewWidth" destination="6gM-E7-l3v" id="uMw-sc-o1t"/>
                         <outlet property="monthName" destination="JHi-Ev-dnc" id="2Gf-9b-Sii"/>
                         <outlet property="tableView" destination="888-Nj-BVZ" id="lc5-TT-lxF"/>
                     </connections>
