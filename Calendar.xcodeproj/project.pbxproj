@@ -14,8 +14,8 @@
 		CBD15DB422A3DDA200FB75C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB222A3DDA200FB75C8 /* Main.storyboard */; };
 		CBD15DB622A3DDA300FB75C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */; };
 		CBD15DB922A3DDA300FB75C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */; };
-		CBD15DC422A3DDA300FB75C8 /* CalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DC322A3DDA300FB75C8 /* CalenderTests.swift */; };
-		CBD15DCF22A3DDA300FB75C8 /* CalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DCE22A3DDA300FB75C8 /* CalenderUITests.swift */; };
+		CBD15DC422A3DDA300FB75C8 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DC322A3DDA300FB75C8 /* CalendarTests.swift */; };
+		CBD15DCF22A3DDA300FB75C8 /* CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DCE22A3DDA300FB75C8 /* CalendarUITests.swift */; };
 		CBD15DE322A3FEA300FB75C8 /* DayHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */; };
 		CBD15DE722A4109900FB75C8 /* HourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */; };
 		CBD15DED22A5275E00FB75C8 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DEC22A5275E00FB75C8 /* Day.swift */; };
@@ -46,18 +46,18 @@
 /* Begin PBXFileReference section */
 		CB08EF4C22ABB5750094224A /* WeekDayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB9DABDA22ABBB3D00E19D63 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		CBD15DAB22A3DDA200FB75C8 /* Calender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD15DAB22A3DDA200FB75C8 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD15DB022A3DDA200FB75C8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		CBD15DB322A3DDA200FB75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD15DB522A3DDA300FB75C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD15DB822A3DDA300FB75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD15DBA22A3DDA300FB75C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBD15DBF22A3DDA300FB75C8 /* CalenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBD15DC322A3DDA300FB75C8 /* CalenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderTests.swift; sourceTree = "<group>"; };
+		CBD15DBF22A3DDA300FB75C8 /* CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD15DC322A3DDA300FB75C8 /* CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
 		CBD15DC522A3DDA300FB75C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBD15DCA22A3DDA300FB75C8 /* CalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBD15DCE22A3DDA300FB75C8 /* CalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderUITests.swift; sourceTree = "<group>"; };
+		CBD15DCA22A3DDA300FB75C8 /* CalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD15DCE22A3DDA300FB75C8 /* CalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITests.swift; sourceTree = "<group>"; };
 		CBD15DD022A3DDA300FB75C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHoursTableViewCell.swift; sourceTree = "<group>"; };
 		CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -140,10 +140,10 @@
 		CBD15DA222A3DDA200FB75C8 = {
 			isa = PBXGroup;
 			children = (
-				CBD15DAD22A3DDA200FB75C8 /* Calender */,
+				CBD15DAD22A3DDA200FB75C8 /* Calendar */,
 				CBD15DB022A3DDA200FB75C8 /* CalendarViewController.swift */,
-				CBD15DC222A3DDA300FB75C8 /* CalenderTests */,
-				CBD15DCD22A3DDA300FB75C8 /* CalenderUITests */,
+				CBD15DC222A3DDA300FB75C8 /* CalendarTests */,
+				CBD15DCD22A3DDA300FB75C8 /* CalendarUITests */,
 				CBD15DAC22A3DDA200FB75C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,14 +151,14 @@
 		CBD15DAC22A3DDA200FB75C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBD15DAB22A3DDA200FB75C8 /* Calender.app */,
-				CBD15DBF22A3DDA300FB75C8 /* CalenderTests.xctest */,
-				CBD15DCA22A3DDA300FB75C8 /* CalenderUITests.xctest */,
+				CBD15DAB22A3DDA200FB75C8 /* Calendar.app */,
+				CBD15DBF22A3DDA300FB75C8 /* CalendarTests.xctest */,
+				CBD15DCA22A3DDA300FB75C8 /* CalendarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBD15DAD22A3DDA200FB75C8 /* Calender */ = {
+		CBD15DAD22A3DDA200FB75C8 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				CB9DABDE22ABF62D00E19D63 /* Utils */,
@@ -166,33 +166,33 @@
 				CB9DABDC22ABF5D900E19D63 /* Supporting Files */,
 				CB9DABDF22ABF65700E19D63 /* Model */,
 			);
-			path = Calender;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
-		CBD15DC222A3DDA300FB75C8 /* CalenderTests */ = {
+		CBD15DC222A3DDA300FB75C8 /* CalendarTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBD15DC322A3DDA300FB75C8 /* CalenderTests.swift */,
+				CBD15DC322A3DDA300FB75C8 /* CalendarTests.swift */,
 				CBD15DC522A3DDA300FB75C8 /* Info.plist */,
 			);
-			path = CalenderTests;
+			path = CalendarTests;
 			sourceTree = "<group>";
 		};
-		CBD15DCD22A3DDA300FB75C8 /* CalenderUITests */ = {
+		CBD15DCD22A3DDA300FB75C8 /* CalendarUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CBD15DCE22A3DDA300FB75C8 /* CalenderUITests.swift */,
+				CBD15DCE22A3DDA300FB75C8 /* CalendarUITests.swift */,
 				CBD15DD022A3DDA300FB75C8 /* Info.plist */,
 			);
-			path = CalenderUITests;
+			path = CalendarUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBD15DAA22A3DDA200FB75C8 /* Calender */ = {
+		CBD15DAA22A3DDA200FB75C8 /* Calendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBD15DD322A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "Calender" */;
+			buildConfigurationList = CBD15DD322A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "Calendar" */;
 			buildPhases = (
 				CBD15DA722A3DDA200FB75C8 /* Sources */,
 				CBD15DA822A3DDA200FB75C8 /* Frameworks */,
@@ -202,14 +202,14 @@
 			);
 			dependencies = (
 			);
-			name = Calender;
+			name = Calendar;
 			productName = Calender;
-			productReference = CBD15DAB22A3DDA200FB75C8 /* Calender.app */;
+			productReference = CBD15DAB22A3DDA200FB75C8 /* Calendar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBD15DBE22A3DDA300FB75C8 /* CalenderTests */ = {
+		CBD15DBE22A3DDA300FB75C8 /* CalendarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBD15DD622A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalenderTests" */;
+			buildConfigurationList = CBD15DD622A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalendarTests" */;
 			buildPhases = (
 				CBD15DBB22A3DDA300FB75C8 /* Sources */,
 				CBD15DBC22A3DDA300FB75C8 /* Frameworks */,
@@ -220,14 +220,14 @@
 			dependencies = (
 				CBD15DC122A3DDA300FB75C8 /* PBXTargetDependency */,
 			);
-			name = CalenderTests;
+			name = CalendarTests;
 			productName = CalenderTests;
-			productReference = CBD15DBF22A3DDA300FB75C8 /* CalenderTests.xctest */;
+			productReference = CBD15DBF22A3DDA300FB75C8 /* CalendarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBD15DC922A3DDA300FB75C8 /* CalenderUITests */ = {
+		CBD15DC922A3DDA300FB75C8 /* CalendarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBD15DD922A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalenderUITests" */;
+			buildConfigurationList = CBD15DD922A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalendarUITests" */;
 			buildPhases = (
 				CBD15DC622A3DDA300FB75C8 /* Sources */,
 				CBD15DC722A3DDA300FB75C8 /* Frameworks */,
@@ -238,9 +238,9 @@
 			dependencies = (
 				CBD15DCC22A3DDA300FB75C8 /* PBXTargetDependency */,
 			);
-			name = CalenderUITests;
+			name = CalendarUITests;
 			productName = CalenderUITests;
-			productReference = CBD15DCA22A3DDA300FB75C8 /* CalenderUITests.xctest */;
+			productReference = CBD15DCA22A3DDA300FB75C8 /* CalendarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -266,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBD15DA622A3DDA200FB75C8 /* Build configuration list for PBXProject "Calender" */;
+			buildConfigurationList = CBD15DA622A3DDA200FB75C8 /* Build configuration list for PBXProject "Calendar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,9 +279,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBD15DAA22A3DDA200FB75C8 /* Calender */,
-				CBD15DBE22A3DDA300FB75C8 /* CalenderTests */,
-				CBD15DC922A3DDA300FB75C8 /* CalenderUITests */,
+				CBD15DAA22A3DDA200FB75C8 /* Calendar */,
+				CBD15DBE22A3DDA300FB75C8 /* CalendarTests */,
+				CBD15DC922A3DDA300FB75C8 /* CalendarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD15DC422A3DDA300FB75C8 /* CalenderTests.swift in Sources */,
+				CBD15DC422A3DDA300FB75C8 /* CalendarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD15DCF22A3DDA300FB75C8 /* CalenderUITests.swift in Sources */,
+				CBD15DCF22A3DDA300FB75C8 /* CalendarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		CBD15DC122A3DDA300FB75C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBD15DAA22A3DDA200FB75C8 /* Calender */;
+			target = CBD15DAA22A3DDA200FB75C8 /* Calendar */;
 			targetProxy = CBD15DC022A3DDA300FB75C8 /* PBXContainerItemProxy */;
 		};
 		CBD15DCC22A3DDA300FB75C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBD15DAA22A3DDA200FB75C8 /* Calender */;
+			target = CBD15DAA22A3DDA200FB75C8 /* Calendar */;
 			targetProxy = CBD15DCB22A3DDA300FB75C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -506,13 +506,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2CSQF9CPL;
-				INFOPLIST_FILE = "Calender/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Calendar/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.Calender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.Calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,13 +525,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2CSQF9CPL;
-				INFOPLIST_FILE = "Calender/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Calendar/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.Calender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.Calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,17 +545,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7QE9MEG9;
-				INFOPLIST_FILE = CalenderTests/Info.plist;
+				INFOPLIST_FILE = CalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalenderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calender.app/Calender";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calendar.app/Calendar";
 			};
 			name = Debug;
 		};
@@ -566,17 +566,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7QE9MEG9;
-				INFOPLIST_FILE = CalenderTests/Info.plist;
+				INFOPLIST_FILE = CalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalenderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calender.app/Calender";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calendar.app/Calendar";
 			};
 			name = Release;
 		};
@@ -586,17 +586,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7QE9MEG9;
-				INFOPLIST_FILE = CalenderUITests/Info.plist;
+				INFOPLIST_FILE = CalendarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalenderUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalendarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Calender;
+				TEST_TARGET_NAME = Calendar;
 			};
 			name = Debug;
 		};
@@ -606,24 +606,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7QE9MEG9;
-				INFOPLIST_FILE = CalenderUITests/Info.plist;
+				INFOPLIST_FILE = CalendarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalenderUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamad.CalendarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Calender;
+				TEST_TARGET_NAME = Calendar;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBD15DA622A3DDA200FB75C8 /* Build configuration list for PBXProject "Calender" */ = {
+		CBD15DA622A3DDA200FB75C8 /* Build configuration list for PBXProject "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD15DD122A3DDA300FB75C8 /* Debug */,
@@ -632,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBD15DD322A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "Calender" */ = {
+		CBD15DD322A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD15DD422A3DDA300FB75C8 /* Debug */,
@@ -641,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBD15DD622A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalenderTests" */ = {
+		CBD15DD622A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalendarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD15DD722A3DDA300FB75C8 /* Debug */,
@@ -650,7 +650,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBD15DD922A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalenderUITests" */ = {
+		CBD15DD922A3DDA300FB75C8 /* Build configuration list for PBXNativeTarget "CalendarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBD15DDA22A3DDA300FB75C8 /* Debug */,

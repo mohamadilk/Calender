@@ -1,15 +1,15 @@
 //
-//  CalenderTests.swift
-//  CalenderTests
+//  CalendarTests.swift
+//  CalendarTests
 //
 //  Created by Mohammad Ilkhani on 6/5/19.
 //  Copyright © 2019 mohamad. All rights reserved.
 //
 
 import XCTest
-@testable import Calender
+@testable import Calendar
 
-class CalenderTests: XCTestCase {
+class CalendarTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
