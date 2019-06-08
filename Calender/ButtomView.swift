@@ -18,16 +18,11 @@ class ButtomView: UIView {
     @IBOutlet weak var totalPrice: UILabel!
     @IBOutlet weak var setDateButton: UIButton!
     
-    init() {
-        super.init(frame: .zero)
+    override func layoutSubviews() {
         setDateButton.clipsToBounds = true
         setDateButton.layer.cornerRadius = 4
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
+
     func updateView(selectedHours: (firstHour: Hour?, secondHour: Hour?), totalTime: Int?) {
         var constant: CGFloat = 0
         if (selectedHours.firstHour == nil) && (selectedHours.secondHour == nil) {
@@ -44,7 +39,7 @@ class ButtomView: UIView {
         }
         heightConstraint.constant = constant
     }
-
+    
      @IBAction func setDate(_ sender: UIButton) {
      }
 }

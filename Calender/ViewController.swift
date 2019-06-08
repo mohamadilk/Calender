@@ -219,11 +219,21 @@ extension ViewController: UIScrollViewDelegate {
 extension ViewController: DayHoursTableViewCellDelegate {
     func didSelect(hour: Int, day: Day, index: Int) {
         month.updateSelectedTimes(hourIndex: hour, dayIndex: index)
-        tableView.reloadData()
-        collectionView.reloadData()
+        updateVisibleCells()
         buttomVIew.updateView(selectedHours: month.selectedHours, totalTime: month.includedTimes.count)
         UIView.animate(withDuration: 0.2) {
             self.buttomVIew.layoutIfNeeded()
+        }
+    }
+    
+    func updateVisibleCells() {
+        collectionView.reloadData()
+        
+        guard let tableCells = tableView.indexPathsForVisibleRows else { return }
+        
+        for index in 0 ... tableCells.count - 1 {
+            let cell = tableView.cellForRow(at: tableCells[index]) as? DayHoursTableViewCell
+            cell?.configure(day: month.days[tableCells[index].section], index: tableCells[index].section)
         }
     }
     

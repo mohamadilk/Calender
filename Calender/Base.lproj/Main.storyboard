@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHV-QF-2DI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHV-QF-2DI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -96,7 +96,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="888-Nj-BVZ">
-                                <rect key="frame" x="0.0" y="159" width="375" height="406"/>
+                                <rect key="frame" x="0.0" y="159" width="375" height="408"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayHoursTableViewCell" rowHeight="225" id="N3G-br-bYj" customClass="DayHoursTableViewCell" customModule="Calender" customModuleProvider="target">
@@ -130,7 +130,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unavailable" translatesAutoresizingMaskIntoConstraints="NO" id="zxO-BE-ku4">
-                                                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                                        <rect key="frame" x="-5" y="-5" width="60" height="60"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </view>
@@ -276,7 +276,7 @@
                             <constraint firstItem="xiO-Wb-9DV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aT0-8A-zSa"/>
                             <constraint firstItem="B21-Sq-2JR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lJI-JK-lhv"/>
                             <constraint firstItem="888-Nj-BVZ" firstAttribute="top" secondItem="xiO-Wb-9DV" secondAttribute="bottom" id="nex-yo-DcT"/>
-                            <constraint firstItem="FM6-5D-wsW" firstAttribute="top" secondItem="888-Nj-BVZ" secondAttribute="bottom" constant="2" id="tBD-M4-Md8"/>
+                            <constraint firstItem="FM6-5D-wsW" firstAttribute="top" secondItem="888-Nj-BVZ" secondAttribute="bottom" id="tBD-M4-Md8"/>
                             <constraint firstItem="xiO-Wb-9DV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tHN-Mm-uME"/>
                             <constraint firstItem="888-Nj-BVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w3e-Fg-d4t"/>
                             <constraint firstItem="FM6-5D-wsW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yVq-dV-00y"/>
@@ -317,7 +317,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow" width="312" height="240"/>
-        <image name="unavailable" width="30" height="30"/>
+        <image name="arrow" width="625" height="481"/>
+        <image name="unavailable" width="60" height="60"/>
     </resources>
 </document>
