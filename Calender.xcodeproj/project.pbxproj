@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB05991C22AB9B9600244128 /* uiViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05991B22AB9B9600244128 /* uiViewExtensions.swift */; };
 		CBD15DAF22A3DDA200FB75C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */; };
 		CBD15DB122A3DDA200FB75C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DB022A3DDA200FB75C8 /* ViewController.swift */; };
 		CBD15DB422A3DDA200FB75C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB222A3DDA200FB75C8 /* Main.storyboard */; };
@@ -14,15 +15,15 @@
 		CBD15DB922A3DDA300FB75C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */; };
 		CBD15DC422A3DDA300FB75C8 /* CalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DC322A3DDA300FB75C8 /* CalenderTests.swift */; };
 		CBD15DCF22A3DDA300FB75C8 /* CalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DCE22A3DDA300FB75C8 /* CalenderUITests.swift */; };
-		CBD15DDD22A3F5D800FB75C8 /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DDC22A3F5D800FB75C8 /* TableViewDatasource.swift */; };
-		CBD15DDF22A3FB3B00FB75C8 /* CollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DDE22A3FB3B00FB75C8 /* CollectionViewDatasource.swift */; };
 		CBD15DE322A3FEA300FB75C8 /* DayHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */; };
 		CBD15DE722A4109900FB75C8 /* HourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */; };
 		CBD15DE922A509C100FB75C8 /* WeekDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DE822A509C100FB75C8 /* WeekDayCollectionViewCell.swift */; };
-		CBD15DEB22A51EE400FB75C8 /* DateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DEA22A51EE400FB75C8 /* DateHandler.swift */; };
 		CBD15DED22A5275E00FB75C8 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DEC22A5275E00FB75C8 /* Day.swift */; };
 		CBD15DEF22A531B600FB75C8 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DEE22A531B600FB75C8 /* Month.swift */; };
 		CBD15DF122A5373C00FB75C8 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD15DF022A5373C00FB75C8 /* Hour.swift */; };
+		D16D408322AA5BEF00142364 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16D408222AA5BEF00142364 /* Time.swift */; };
+		D187AEB122AAB86C00B26B1C /* ButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187AEB022AAB86C00B26B1C /* ButtomView.swift */; };
+		D1CAE09122A7A4130082C39E /* CustomeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CAE09022A7A4130082C39E /* CustomeColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB05991B22AB9B9600244128 /* uiViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiViewExtensions.swift; sourceTree = "<group>"; };
 		CBD15DAB22A3DDA200FB75C8 /* Calender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD15DAE22A3DDA200FB75C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD15DB022A3DDA200FB75C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,15 +58,15 @@
 		CBD15DCA22A3DDA300FB75C8 /* CalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD15DCE22A3DDA300FB75C8 /* CalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderUITests.swift; sourceTree = "<group>"; };
 		CBD15DD022A3DDA300FB75C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBD15DDC22A3F5D800FB75C8 /* TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
-		CBD15DDE22A3FB3B00FB75C8 /* CollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDatasource.swift; sourceTree = "<group>"; };
 		CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHoursTableViewCell.swift; sourceTree = "<group>"; };
 		CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBD15DE822A509C100FB75C8 /* WeekDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCollectionViewCell.swift; sourceTree = "<group>"; };
-		CBD15DEA22A51EE400FB75C8 /* DateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandler.swift; sourceTree = "<group>"; };
 		CBD15DEC22A5275E00FB75C8 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		CBD15DEE22A531B600FB75C8 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		CBD15DF022A5373C00FB75C8 /* Hour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		D16D408222AA5BEF00142364 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		D187AEB022AAB86C00B26B1C /* ButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomView.swift; sourceTree = "<group>"; };
+		D1CAE09022A7A4130082C39E /* CustomeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +123,16 @@
 				CBD15DB722A3DDA300FB75C8 /* LaunchScreen.storyboard */,
 				CBD15DBA22A3DDA300FB75C8 /* Info.plist */,
 				CBD15DB022A3DDA200FB75C8 /* ViewController.swift */,
-				CBD15DDC22A3F5D800FB75C8 /* TableViewDatasource.swift */,
-				CBD15DDE22A3FB3B00FB75C8 /* CollectionViewDatasource.swift */,
 				CBD15DE222A3FEA300FB75C8 /* DayHoursTableViewCell.swift */,
 				CBD15DE622A4109900FB75C8 /* HourCollectionViewCell.swift */,
 				CBD15DE822A509C100FB75C8 /* WeekDayCollectionViewCell.swift */,
-				CBD15DEA22A51EE400FB75C8 /* DateHandler.swift */,
 				CBD15DEE22A531B600FB75C8 /* Month.swift */,
 				CBD15DEC22A5275E00FB75C8 /* Day.swift */,
 				CBD15DF022A5373C00FB75C8 /* Hour.swift */,
+				D1CAE09022A7A4130082C39E /* CustomeColors.swift */,
+				D16D408222AA5BEF00142364 /* Time.swift */,
+				D187AEB022AAB86C00B26B1C /* ButtomView.swift */,
+				CB05991B22AB9B9600244128 /* uiViewExtensions.swift */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -283,16 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD15DEB22A51EE400FB75C8 /* DateHandler.swift in Sources */,
 				CBD15DB122A3DDA200FB75C8 /* ViewController.swift in Sources */,
+				D187AEB122AAB86C00B26B1C /* ButtomView.swift in Sources */,
 				CBD15DE322A3FEA300FB75C8 /* DayHoursTableViewCell.swift in Sources */,
+				D16D408322AA5BEF00142364 /* Time.swift in Sources */,
 				CBD15DE722A4109900FB75C8 /* HourCollectionViewCell.swift in Sources */,
+				D1CAE09122A7A4130082C39E /* CustomeColors.swift in Sources */,
 				CBD15DAF22A3DDA200FB75C8 /* AppDelegate.swift in Sources */,
 				CBD15DED22A5275E00FB75C8 /* Day.swift in Sources */,
-				CBD15DDD22A3F5D800FB75C8 /* TableViewDatasource.swift in Sources */,
-				CBD15DDF22A3FB3B00FB75C8 /* CollectionViewDatasource.swift in Sources */,
 				CBD15DEF22A531B600FB75C8 /* Month.swift in Sources */,
 				CBD15DE922A509C100FB75C8 /* WeekDayCollectionViewCell.swift in Sources */,
+				CB05991C22AB9B9600244128 /* uiViewExtensions.swift in Sources */,
 				CBD15DF122A5373C00FB75C8 /* Hour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,16 +2,22 @@
 //  DayHoursTableViewCell.swift
 //  Calender
 //
-//  Created by Mohammad Ilkhani on 6/2/19.
+//  Created by Mohammad Ilkhani on 6/5/19.
 //  Copyright © 2019 mohamad. All rights reserved.
 //
 
 import UIKit
 
+protocol DayHoursTableViewCellDelegate {
+    func didSelect(hour: Int, day: Day, index: Int)
+}
+
 class DayHoursTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var day = Day(date: Date(), state: .DayState_NotSelected)
+    var index: Int?
+    var delegate: DayHoursTableViewCellDelegate?
     
     private let itemPerRow:CGFloat = 6.0
     private let sectionInsets = UIEdgeInsets(top: 0,
@@ -27,12 +33,15 @@ class DayHoursTableViewCell: UITableViewCell {
 
     }
     
-    func configure(day: Day) {
+    func configure(day: Day, index: Int) {
         self.day = day
+        self.index = index
+        collectionView.reloadData()
     }
     
 }
 
+// UICollectionView Delegate and Datasource
 extension DayHoursTableViewCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
@@ -71,5 +80,12 @@ extension DayHoursTableViewCell: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HourCollectionCell", for: indexPath) as! HourCollectionViewCell        
         cell.configure(hour: day.hours[indexPath.row])
         return cell
+    }
+}
+
+extension DayHoursTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if day.hours[indexPath.row].selectable == false { return }
+        delegate?.didSelect(hour: indexPath.row, day: day, index: index!)
     }
 }

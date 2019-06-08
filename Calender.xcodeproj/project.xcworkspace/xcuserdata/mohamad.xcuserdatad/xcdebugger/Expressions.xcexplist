@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.didSelect(hour:day:index:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "month.selectedHours">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Month.updateSelectedTime(hour:day:index:):Month.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "includedTimes[0]">
+            </PersistentString>
+            <PersistentString
+               value = "includedTimes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.didSelectHourAt(day:index:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DayHoursTableViewCell.awakeFromNib():DayHoursTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(_:didSelectItemAt:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Month.updateSelectedTimes(hourIndex:dayIndex:):Month.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "includedTimes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Month.updateSelectedDates(day:):Month.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedDays">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DayHoursTableViewCell.configure(day:index:):DayHoursTableViewCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
