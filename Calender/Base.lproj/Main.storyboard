@@ -67,10 +67,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufe-IB-um9">
-                                                    <rect key="frame" x="0.0" y="25" width="50" height="22"/>
+                                                    <rect key="frame" x="0.0" y="21" width="50" height="30"/>
                                                     <color key="backgroundColor" red="0.2636451198630137" green="0.32467358732876711" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="cA2-R0-7Oq"/>
+                                                        <constraint firstAttribute="height" constant="30" id="cA2-R0-7Oq"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="su" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFC-hq-cWT">
