@@ -49,15 +49,15 @@ class HourCollectionViewCell: UICollectionViewCell {
             
         case .HourState_SelectedJustOne:
             backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
-            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
-            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 10
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 10
             backgroundColorView.isHidden = false
             break
             
         case .HourState_SelectedAsStart:
             backgroundColorView.roundCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: backgroundColorView.frame.size.height / 2)
             backgroundViewTrailing.constant = 0
-            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundViewLeading.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 10
             backgroundColorView.isHidden = false
             break
             
@@ -70,7 +70,7 @@ class HourCollectionViewCell: UICollectionViewCell {
             
         case .HourState_SelectedAsEnd:
             backgroundColorView.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner], radius: backgroundColorView.frame.size.height / 2)
-            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 8
+            backgroundViewTrailing.constant = (self.frame.size.width - backgroundColorView.frame.size.height) / 2 - 10
             backgroundViewLeading.constant = 0
             backgroundColorView.isHidden = false
             break
